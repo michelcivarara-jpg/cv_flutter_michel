@@ -1,16 +1,33 @@
 # cv_flutter_michel
 
-A new Flutter project.
+Application mobile Flutter qui présente le CV, la famille et les coordonnées de Michel Civarara.
 
-## Getting Started
+Identifiants de test : `michel` / `1234`
 
-This project is a starting point for a Flutter application.
+## Page 1 : Connexion
 
-A few resources to get you started if this is your first Flutter project:
+Formulaire avec un champ identifiant, un champ mot de passe (texte masqué) et un bouton « Se connecter ».
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Page de connexion](screenshots/1_connexion.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Page 2 : Accueil (CV)
+
+Photo, nom, profil, formation, expériences, compétences, langues et centres d'intérêt.
+
+![Page d'accueil](screenshots/2_accueil.png)
+
+## Page 3 : Famille
+
+Liste des membres de la famille avec leur nom, leur photo et leur lien de parenté.
+
+![Page famille](screenshots/3_famille.png)
+
+## Page 4 : Contact
+
+Téléphone, e-mail, adresse et réseaux sociaux. Les contacts sont cliquables (appel, e-mail, lien).
+
+![Page contact](screenshots/4_contact.png)
+
+## Navigation
+
+Une fois connecté, une barre de navigation en bas (BottomNavigationBar) permet de passer d'une page à l'autre.
