@@ -2,32 +2,40 @@
 
 Application mobile Flutter qui présente le CV, la famille et les coordonnées de Michel Civarara.
 
-Identifiants de test : `michel` / `1234`
+Dans ce TP2, la connexion est réelle et les membres de la famille sont gérés par une API REST avec une base de données MySQL.
 
-## Page 1 : Connexion
+## Vidéo de démonstration
 
-Formulaire avec un champ identifiant, un champ mot de passe (texte masqué) et un bouton « Se connecter ».
+[Voir la vidéo de démonstration](video/demo.mp4)
 
-![Page de connexion](screenshots/1_connexion.jpg)
+La vidéo montre : la création de compte, la connexion, la page Accueil, l'ajout, la modification et la suppression d'un membre de la famille, puis la page Contact.
 
-## Page 2 : Accueil (CV)
+## Fonctionnalités
 
-Photo, nom, profil, formation, expériences, compétences, langues et centres d'intérêt.
+- **Connexion et création de compte** : l'application envoie l'e-mail et le mot de passe à l'API (`/accounts/login` et `/accounts/register`).
+- **Accueil** : photo, nom, formation, expériences, compétences, langues et centres d'intérêt.
+- **Famille** : liste, ajout, modification et suppression des membres, enregistrés dans la base de données via l'API (`/famille-membres`).
+- **Contact** : téléphone, e-mail, adresse, avec des liens cliquables.
+- **Navigation** : barre en bas (BottomNavigationBar) entre les trois pages.
+
+## Utilisation de l'API
+
+L'API utilisée est celle du dépôt https://github.com/espoirbaraka/api-test.
+
+1. Placer l'API dans `C:\xampp\htdocs\api-test` et démarrer Apache et MySQL dans XAMPP.
+2. Créer une base de données `api` et importer le fichier `api.sql`.
+3. Lancer l'application avec `flutter run -d chrome`.
+
+L'adresse de l'API est définie dans `lib/services/api_service.dart` : `http://localhost/api-test/public`.
+
+## Captures d'écran
+
+### Accueil
 
 ![Page d'accueil](screenshots/2_accueil.jpg)
 
-## Page 3 : Famille
-
-Liste des membres de la famille avec leur nom, leur photo et leur lien de parenté.
-
-![Page famille](screenshots/3_famille.jpg)
-
-## Page 4 : Contact
-
-Téléphone, e-mail, adresse et réseaux sociaux. Les contacts sont cliquables (appel, e-mail, lien).
+### Contact
 
 ![Page contact](screenshots/4_contact.jpg)
 
-## Navigation
-
-Une fois connecté, une barre de navigation en bas (BottomNavigationBar) permet de passer d'une page à l'autre.
+Les pages de connexion et de famille, qui ont changé dans ce TP, sont visibles dans la vidéo de démonstration.
