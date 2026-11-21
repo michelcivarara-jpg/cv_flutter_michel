@@ -6,7 +6,7 @@ Dans ce TP2, la connexion est réelle et les membres de la famille sont gérés 
 
 ## Vidéo de démonstration
 
-[Voir la vidéo de démonstration](video/demo.mp4)
+[Voir la vidéo de démonstration](https://github.com/michelcivarara-jpg/cv_flutter_michel/raw/main/video/demo.mp4)
 
 La vidéo montre : la création de compte, la connexion, la page Accueil, l'ajout, la modification et la suppression d'un membre de la famille, puis la page Contact.
 
